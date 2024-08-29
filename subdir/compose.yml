@@ -1,0 +1,40 @@
+x-app: &default-app
+  env_file:
+    - ".env"
+  restart: "${DOCKER_RESTART_POLICY:-unless-stopped}"
+  stop_grace_period: "3s"
+  tty: true
+  healthcheck:
+    interval: "60s"
+    timeout: "3s"
+    start_period: "5s"
+    retries: 3
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"  # Map container port 8080 to host port 8080
+    depends_on:
+      - backend  # Ensure backend service is started before frontend
+    networks:
+      - project_network
+
+  backend:
+    build:
+      context: ./backend  # Path to your Flask backend Dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"  # Map container port 5000 to host port 5000
+    
+    environment:
+      - FLASK_ENV=development
+    
+    networks:
+      - project_network
+
+networks:
+  project_network:
+    external: true
