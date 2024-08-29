@@ -1,0 +1,93 @@
+/* styles.css (or your component's CSS file) */
+
+.formBody {
+    background: rgba(255, 255, 255, 0.15); /* Background color with transparency */
+    backdrop-filter: blur(10px); /* Apply backdrop blur */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Box shadow */
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Optional: Border for better contrast */
+    padding: 20px; /* Optional: Add padding for content spacing */
+    width: 70vw; /* Set width to cover 70% of the viewport width */
+    max-width: 800px; /* Optional: Limit max-width for larger screens */
+    margin: 0 auto; /* Center align horizontally */
+}
+
+.formBody form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formBody #initial {
+    margin-bottom: 20px;
+}
+
+.formBody #details {
+    width: 63%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formBody .submitBtn {
+    text-align: center;
+}
+
+.formBody #result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.formBody input[type='text'] {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select{
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formBody button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formBody button:hover {
+    background-color: #0056b3;
+}
+
+.label{
+    color: black;
+    font-weight: bolder;
+}
+
+.success{
+    color: rgb(0, 212, 0);
+    font-weight: bold;
+    font-style: italic;
+}
+
+#error{
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+a{
+    color: black;
+}

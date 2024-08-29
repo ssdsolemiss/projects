@@ -1,0 +1,20 @@
+[Directories]
+AbstractRetrieval = C:\Users\MDsota\.cache\pybliometrics\Scopus\abstract_retrieval
+AffiliationRetrieval = C:\Users\MDsota\.cache\pybliometrics\Scopus\affiliation_retrieval
+AffiliationSearch = C:\Users\MDsota\.cache\pybliometrics\Scopus\affiliation_search
+AuthorRetrieval = C:\Users\MDsota\.cache\pybliometrics\Scopus\author_retrieval
+AuthorSearch = C:\Users\MDsota\.cache\pybliometrics\Scopus\author_search
+CitationOverview = C:\Users\MDsota\.cache\pybliometrics\Scopus\citation_overview
+ScopusSearch = C:\Users\MDsota\.cache\pybliometrics\Scopus\scopus_search
+SerialSearch = C:\Users\MDsota\.cache\pybliometrics\Scopus\serial_search
+SerialTitle = C:\Users\MDsota\.cache\pybliometrics\Scopus\serial_title
+PlumXMetrics = C:\Users\MDsota\.cache\pybliometrics\Scopus\plumx
+SubjectClassifications = C:\Users\MDsota\.cache\pybliometrics\Scopus\subject_classification
+
+[Authentication]
+APIKey = 97f49df67beae7fe1ce43a7311c5382a
+
+[Requests]
+Timeout = 20
+Retries = 5
+
