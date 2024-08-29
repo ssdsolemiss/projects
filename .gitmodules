@@ -1,3 +1,6 @@
 [submodule "Edashboard"]
 	path = Edashboard
 	url = https://github.com/msota0/Edashboard.git
+[submodule "scopus-api"]
+	path = scopus-api
+	url = https://github.com/msota0/scopus-api.git
